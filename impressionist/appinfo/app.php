@@ -28,7 +28,7 @@ OCP\App::register(array('order' => 70, 'id' => 'impress', 'name' => 'Impress'));
 OCP\App::addNavigationEntry( array( 
 	'id' => 'impressionist_index',
 	'order' => 74,
-	'href' => OCP\Util::linkTo( 'Impressionist', 'index.php' ),
-	'icon' => OCP\Util::imagePath( 'Impressionist', 'impress.png' ),
+	'href' => OCP\Util::linkTo( 'impressionist', 'index.php' ),
+	'icon' => OCP\Util::imagePath( 'impressionist', 'impress.png' ),
 	'name' => 'Impressionist'
 ));
