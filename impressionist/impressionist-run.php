@@ -25,7 +25,7 @@ require_once 'lib/impressionist.php';
 
 // Check if we are a user
 OCP\User::checkLoggedIn();
-OCP\JSON::checkAppEnabled('impressionist');
+OCP\App::checkAppEnabled('impressionist');
 
 $filename = OCP\Util::sanitizeHTML($_GET['file']);
 $title = OCP\Util::sanitizeHTML($_GET['name']);
