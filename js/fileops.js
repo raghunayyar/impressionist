@@ -1,3 +1,5 @@
+
+//YET HAVE TO IMPLEMENT THIS PART. Involves opening and closing of files and saving files! Important!
 /**
  * Impressionist
  *

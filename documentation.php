@@ -4,7 +4,7 @@
  * ownCloud - Impressionist & Impress App
  *
  * @author Raghu Nayyar & Frank Karlitschek
- * @copyright 2012  me@iraghu.com Frank Karlitschek karlitschek@kde.org
+ * @copyright 2012 me@iraghu.com Frank Karlitschek karlitschek@kde.org
  * 
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU AFFERO GENERAL PUBLIC LICENSE
@@ -21,14 +21,11 @@
  * 
  */
 
-OCP\Util::addStyle('impressionist', 'style'); // Basic layout of the page. 
+require_once 'lib/impressionist.php';
 
-OCP\App::register(array('order' => 70, 'id' => 'impressionist', 'name' => 'Impressionist'));
+OCP\User::checkLoggedIn();
+OCP\JSON::checkAppEnabled('impressionist');
+OCP\App::setActiveNavigationEntry( 'impressionist_index' );
 
-OCP\App::addNavigationEntry( array( 
-	'id' => 'impressionist_index',
-	'order' => 74,
-	'href' => OCP\Util::linkTo( 'impressionist', 'index.php' ),
-	'icon' => OCP\Util::imagePath( 'impressionist', 'impress.png' ),
-	'name' => 'Impressionist'
-));
+$tmpl = new OCP\Template('impressionist', 'documentation', 'user');
+$tmpl->printPage();

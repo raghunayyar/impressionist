@@ -34,7 +34,7 @@ class Storage {
 
 	public static function getPresentations() {
 		$presentations=array();
-		$list=\OC_FileCache::searchByMime('text', 'impressionist' );
+		$list=\OC_FileCache::searchByMime('text', 'impress' ); // searching .impress files? Am I supposed to look for .impress mimetype? Check. 
 		foreach($list as $l) {
 			$info=pathinfo($l);
 			$size=\OC_Filesystem::filesize($l);
@@ -47,4 +47,48 @@ class Storage {
 	
 		return $presentations;
 	}
+        //For running the impress files made.
+        // I dont think the player.css is required as we making files and not running demos. Check. 
+        public static function showHeader() {
+            echo ('
+                <!doctype html>
+		<html lang="en">
+		<head>	
+                    <meta charset="utf-8" />
+                        <meta name="viewport" content="width=1024" />
+                        <title>'.$title.'</title>
+                        <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+                        <link href="'.\OCP\Util::linkToAbsolute('impressionist', 'css/player.css').'" rel="stylesheet" />
+                </head>
+                <body class="impress-not-supported">
+                        <div class="fallback-message">
+                                <p>Your browser <b>does not support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+                                <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+                                <p>Note that Impressionist currrently supports only -webkit browsers.</p>
+                        </div>
+                        <div class="impress">       
+                    ');
+            
+        }
+        //For adding scripts to the impress files.
+	public static function showFooter() {
+			
+		echo('
+		
+                            <div class="hint">
+                                <p>Make fullscreen and use a spacebar or arrow keys to navigate</p>
+                            </div>
+                            <script>
+                                if ("ontouchstart" in document.documentElement) { 
+                                        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+                                }
+                            </script>
+                            <script src="'.\OCP\Util::linkToAbsolute('impressionist', 'js/impress.js').'"></script>
+                            <script>impress().init();</script>		
+                            <script>
+                            </script>
+		
+		</body></html>
+		');        
+        }
 }

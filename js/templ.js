@@ -1,3 +1,4 @@
+//Template for the implemented files.! WE dont need this. Have to run through ownCloud. CHECK!
 /**
  * Impressionist
  *
