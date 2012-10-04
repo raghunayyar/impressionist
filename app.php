@@ -1,3 +1,13 @@
+<!--
+ * Impressionist
+ *
+ * Impressionist is a visual ide for impress.js. impress.js is a presentation tool based on the power of CSS3 transforms and transitions
+ * in modern browsers and inspired by the idea behind prezi.com.
+ *
+ * MIT Licensed.
+ *
+ * Impressionist Copyright 2012 Harish Sivaramakrishnan (@hsivaram) 
+ -->
 <html lang="en">
     <head>
          <meta charset="utf-8" />
@@ -31,10 +41,7 @@
          <script src="<?php echo OCP\Util::linkToAbsolute('impressionist', 'js/raphael.js'); ?>" type="text/javascript"></script>
          <script src="<?php echo OCP\Util::linkToAbsolute('impressionist', 'js/freetransform.js'); ?>" type="text/javascript"></script>
          <script src="<?php echo OCP\Util::linkToAbsolute('impressionist', 'js/jqueryui.js'); ?>" type="text/javascript"></script>
-         <script src="<?php echo OCP\Util::linkToAbsolute('impressionist', 'js/bootstrap-button.js'); ?>" type="text/javascript"></script>
-         <script src="<?php echo OCP\Util::linkToAbsolute('impressionist', 'js/bootstrap-dropdown.js'); ?>" type="text/javascript"></script>
-         <script src="<?php echo OCP\Util::linkToAbsolute('impressionist', 'js/bootstrap-modal.js'); ?>" type="text/javascript"></script>
-         <script src="<?php echo OCP\Util::linkToAbsolute('impressionist', 'js/bootstrap-tooltip.js'); ?>"type="text/javascript"></script>
+         <script src="<?php echo OCP\Util::linkToAbsolute('impressionist', 'js/bootstrap.js'); ?>" type="text/javascript"></script>
          <script src="<?php echo OCP\Util::linkToAbsolute('impressionist', 'js/advanced.js'); ?>" type="text/javascript"></script>
          <script src="<?php echo OCP\Util::linkToAbsolute('impressionist', 'js/wysihtml5-0.3.0.js'); ?>" type="tet/javascript"></script>
          <script>
