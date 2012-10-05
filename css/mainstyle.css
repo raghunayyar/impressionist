@@ -1,12 +1,37 @@
 @import url('bootstrap.css');
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url("fonts/OpenSans.ttf") format("truetype");
+        font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Artifika';
+	src: url("fonts/Artifika.ttf") format("truetype");
+        font-weight:normal;
+}
+
+@font-face {
+	font-family: 'Comfortaa';
+	src: url("fonts/Comfortaa.ttf") format("truetype");
+        font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Cardo';
+	src: url("fonts/Cardob.ttf") format("truetype");
+        font-weight: normal;
+}
+
+
 #brandlogo
 {
 	color:#222;
 	font-size : 150%;
 	vertical-align: middle;
-	/*font-family: 'Inika', serif;*/
-		font-family: 'Crete Round', serif;
-		margin-left: 10px;
+	font-family: 'Open Sans', serif;
+	margin-left: 10px;
 }
 #subnav
 {
@@ -110,9 +135,7 @@
 	vertical-align:middle;
 	margin-top:30px;
 	margin-left:45px;
-
-	/*font-family: 'Inika', serif;*/
-		font-family: 'Armata', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size:90%;
 	width:20px;
 	height:20px;
@@ -133,7 +156,6 @@
 	vertical-align:middle;
 	margin-top:60px;
 	margin-left:-15px;
-	/*font-family: 'Inika', serif;*/
 	width:20px;
 	height:20px;
 	color:#FFF;
@@ -215,8 +237,8 @@
 }
 .itemselected
 {
-		outline:1px solid #0ca4eb;
-		outline-offset: 5px; 
+	outline:1px solid #0ca4eb;
+	outline-offset: 5px; 
 }
 .picselected
 {
@@ -226,7 +248,7 @@
 
 .largeheader:hover
 {
-		cursor:pointer;
+	cursor:pointer;
 
 }
 .jumbo
@@ -242,7 +264,7 @@
 .slideobject
 {
 	position: absolute;
-	font-family:"Inika",serif;
+	font-family:"Open Sans",serif;
 
 }
 .selectionrect
@@ -258,43 +280,22 @@
 }
 #editorBox
 {
-		/*font-family: 'Inika', serif;*/
-		font-family: 'Armata', sans-serif;
-		position: absolute;
-		padding: 5px 0px 5px 0px;
-		text-align: left;
-		line-height:60px;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	padding: 5px 0px 5px 0px;
+	text-align: left;
+	line-height:60px;
 }
 .largeeditor
 {
 	height:120px;
 
 }
-.inika
-{
-	font-family: 'Inika', serif;
-}
-.bevan
-{
-	font-family: 'Bevan', serif;
-}
-.fresca
-{
-	font-family: 'Fresca', sans-serif;;
-}
-.doppio
-{
-	font-family: 'Armata', sans-serif;
-}
-.walter
-{
-	font-family: 'Walter Turncoat', cursive;
-}
 
 .deleteicon
 {
 	vertical-align:middle;
-	font-family: 'Inika', serif;
+	font-family: "Open Sans", serif;
 	width:20px;
 	height:20px;
 	color:#FFF;
@@ -312,7 +313,7 @@
 }
 .deleteicon:hover
 {
-		background-color: #8c0000;
+	background-color: #8c0000;
 
 }
 .thumbdeleteicon
@@ -366,8 +367,8 @@
 	background-color: #FFF;
 	overflow:scroll;
 	border-left: 1px solid #DDD;
-    border-right: 1px solid #DDD;
-    overflow: hidden;
+        border-right: 1px solid #DDD;
+        overflow: hidden;
 
 	
 
@@ -403,15 +404,13 @@
 }
 .whitep
 {
-	/*font-family: 'Inika', serif;*/
-		font-family: 'Armata', sans-serif;	
+	font-family: 'Open Sans', sans-serif;	
 	color:#FFF;
 	margin-top:-5px;
 }
 .blackp
 {
-	/*font-family: 'Inika', serif;*/
-		font-family: 'Armata', sans-serif;	
+	font-family: "Open Sans", sans-serif;	
 	color:#000;
 	margin-top:-5px;
 }
@@ -530,8 +529,7 @@
 	left:10px;
 	width:500px;
 	margin-left: -25px;
-	/*font-family: 'Inika', serif;*/
-		font-family: 'Armata', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size:110%;
 	font-weight:bold;
 }
@@ -547,10 +545,10 @@
 }
 .warninglabel
 {
-		position: absolute;
-		left:220px;
-		width:200px;
-		text-align:left;
+	position: absolute;
+	left:220px;
+	width:200px;
+	text-align:left;
 
 }
 #outputconsole
@@ -607,7 +605,7 @@
 	left:10px;
 	width:500px;
 	margin-left: -25px;
-	font-family:"Inika", serif;
+	font-family:"Open Sans", serif;
 	font-size:110%;
 	font-weight:bold;
 }
@@ -624,7 +622,6 @@
 	width:100%;
 	border-bottom:1px dotted #CCC;
 	text-align:left;
-	/*font-family: 'Inika', serif;*/
 }
 .presolistitem:hover
 {
@@ -675,7 +672,7 @@
 }
 #filedropdown, #fontsizedropdown, #viewchangedropdown, #fonttypedropdown, #colorselector
 {
-	/*z-index:40000*/;
+	/*z-index:40000*/
 }
 .shadedanchor
 {
@@ -784,7 +781,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', end
 	height:20px;
 	font-size:12px;
 	padding-top:3px;
-	font-family: 'Armata', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 #shaperesize
 {

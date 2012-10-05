@@ -17,9 +17,6 @@
                 $("#mybody").css("visibility", "visible");
                 init();
             }
-            else {
-                document.location.href = "<?php echo OCP\Util::linkToAbsolute('impressioninst', 'main.php'); ?>";
-            }
             initializeEditor();
         });
         function initializeEditor() {
@@ -141,18 +138,11 @@
                     <ul class="dropdown-menu" id="fonttypedropdown">
                         <li class="shadedanchor"><a>Sans Serif Fonts</a></li>
                         <li class="divider"></li>
-                        <li><a href="#" onclick="setFont('Inika')">Inika</a></li>
-                        <li><a href="#" onclick="setFont('Fresca')">Fresca</a></li>
-                        <li><a href="#" onclick="setFont('Doppio One')">Doppio One</a></li>
-                        <li><a href="#" onclick="setFont('Montserrat')">Montserrat</a></li>
-                        <li><a href="#" onclick="setFont('Bevan')">Bevan</a></li>
+                        <li><a href="#" onclick="setFont('OpenSans')">Open Sans</a></li>
+                        <li><a href="#" onclick="setFont('Cardob')">Cardo</a></li>
+                        <li><a href="#" onclick="setFont('Comfortaa')">Comfortaa</a></li>
+                        <li><a href="#" onclick="setFont('Artifika')">Artifika</a></li>
                         <li>&nbsp;</li>
-                        <li class="shadedanchor"><a>Decorative Fonts</a></li>
-                        <li>&nbsp;</li>
-                        <li><a href="#" onclick="setFont('Walter Turncoat')">Walter Turncoat</a></li>
-                        <li><a href="#" onclick="setFont('Henny Penny')">Henny Penny</a></li>
-                        <li><a href="#" onclick="setFont('Ribeye Marrow')">Ribeye Marrow</a></li>
-                        <li><a href="#" onclick="setFont('Unkempt')">Unkempt</a></li>
                     </ul>
                 </div>
             </li>
